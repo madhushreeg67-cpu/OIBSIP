@@ -1,0 +1,6 @@
+# Local serve/legacy folder
+MooFarm-LandingPage/
+
+# OS files
+.DS_Store
+Thumbs.db
