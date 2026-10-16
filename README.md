@@ -35,21 +35,38 @@ A modern, responsive personal portfolio and digital résumé showcasing technica
   - Machine Learning Certifications &amp; VTU State Athletic Honors
   - Interactive Contact Form &amp; Direct Connect Details
 
+### 🌡️ Task 3: Temperature Converter Website
+A modern, responsive, and precise temperature converter web application supporting real-time conversions between Celsius, Fahrenheit, and Kelvin with physical absolute-zero limit validation and dynamic thermal status indicators.
+
+- **Directory:** [`WebDev-L1-TemperatureConverter/`](./WebDev-L1-TemperatureConverter)
+- **Technologies Used:** HTML5, CSS3 (Dark Theme, Ambient Glows), Vanilla JavaScript (ES6+), Google Fonts
+- **Key Features:**
+  - Instant bi-directional conversion between Celsius (°C), Fahrenheit (°F), and Kelvin (K)
+  - Simultaneous multi-unit results grid with conversion formulas
+  - Strict input validation for non-numeric, empty inputs, and values below absolute zero (-273.15°C / 0 K)
+  - Dynamic ambient thermal glow and status indicators (Freezing, Moderate, Boiling, Sub-Zero)
+  - Quick preset buttons for common temperature benchmarks
+
 ---
 
 ### How to Run Locally
 
 Navigate into any task folder:
 ```bash
-# Task 1
+# Task 1: FarmCare Landing Page
 cd FarmCare-LandingPage
 Start-Process index.html
 
-# Task 2
+# Task 2: Personal Portfolio
 cd Personal-Portfolio
+Start-Process index.html
+
+# Task 3: Temperature Converter
+cd WebDev-L1-TemperatureConverter
 Start-Process index.html
 ```
 Or serve using `npx serve`:
 ```bash
 npx -y serve .
 ```
+

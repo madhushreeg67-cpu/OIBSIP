@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WebDev-L1-TemperatureConverter - Accurate temperature converter for Celsius, Fahrenheit, and Kelvin with absolute zero validation.">
+    <title>Temperature Converter | Oasis Infobyte Task 3</title>
+    
+    <!-- Google Fonts for Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Ambient Thermal Glows -->
+    <div class="glow glow-cold" id="glowCold"></div>
+    <div class="glow glow-warm" id="glowWarm"></div>
+
+    <main class="converter-app">
+        <div class="converter-card">
+            <!-- 1. Header -->
+            <header class="converter-header">
+                <div class="header-icon-wrap" id="thermalIcon">
+                    <span class="icon-emoji">🌡️</span>
+                </div>
+                <h1>Temperature Converter</h1>
+                <p class="subtitle">Convert instantly between Celsius, Fahrenheit, and Kelvin with absolute-zero precision.</p>
+            </header>
+
+            <!-- 2, 3, 4. Converter Form / Inputs -->
+            <form class="converter-form" id="converterForm" novalidate>
+                <div class="input-row">
+                    <!-- Temperature input -->
+                    <div class="form-group input-group">
+                        <label for="tempInput">Degrees / Value</label>
+                        <div class="input-wrapper">
+                            <input
+                                type="number"
+                                id="tempInput"
+                                step="any"
+                                placeholder="e.g. 100"
+                                autocomplete="off"
+                                required
+                            >
+                            <button type="button" class="btn-clear" id="btnClear" title="Clear input" aria-label="Clear input">✕</button>
+                        </div>
+                    </div>
+
+                    <!-- Unit selector -->
+                    <div class="form-group unit-group">
+                        <label for="unitSelect">Input Unit</label>
+                        <div class="select-wrapper">
+                            <select id="unitSelect">
+                                <option value="celsius" selected>Celsius (°C)</option>
+                                <option value="fahrenheit">Fahrenheit (°F)</option>
+                                <option value="kelvin">Kelvin (K)</option>
+                            </select>
+                            <span class="select-arrow">▼</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Convert button -->
+                <button type="submit" class="btn-convert" id="convertBtn">
+                    <span>Convert Temperature</span>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </button>
+            </form>
+
+            <!-- 6. Validation Message Area -->
+            <div class="validation-message" id="validationMessage" role="alert" aria-live="polite"></div>
+
+            <!-- 5. Results Section: Displays all three units simultaneously -->
+            <section class="results-section" id="resultsSection" aria-label="Conversion Results">
+                <div class="results-header">
+                    <span class="results-tag">CONVERTED RESULTS</span>
+                    <span class="thermal-status" id="thermalStatus">Normal Range</span>
+                </div>
+
+                <div class="results-grid">
+                    <!-- Celsius Card -->
+                    <div class="result-card" id="cardCelsius">
+                        <div class="result-card-top">
+                            <span class="unit-symbol">°C</span>
+                            <span class="unit-name">Celsius</span>
+                        </div>
+                        <div class="result-value" id="valCelsius">--</div>
+                        <div class="result-formula">Base Metric Unit</div>
+                    </div>
+
+                    <!-- Fahrenheit Card -->
+                    <div class="result-card" id="cardFahrenheit">
+                        <div class="result-card-top">
+                            <span class="unit-symbol">°F</span>
+                            <span class="unit-name">Fahrenheit</span>
+                        </div>
+                        <div class="result-value" id="valFahrenheit">--</div>
+                        <div class="result-formula">(°C × 9/5) + 32</div>
+                    </div>
+
+                    <!-- Kelvin Card -->
+                    <div class="result-card" id="cardKelvin">
+                        <div class="result-card-top">
+                            <span class="unit-symbol">K</span>
+                            <span class="unit-name">Kelvin</span>
+                        </div>
+                        <div class="result-value" id="valKelvin">--</div>
+                        <div class="result-formula">°C + 273.15</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Quick Preset Buttons for easy testing -->
+            <div class="presets-row">
+                <span class="presets-label">Quick Presets:</span>
+                <button type="button" class="btn-preset" data-val="0" data-unit="celsius">Freezing (0°C)</button>
+                <button type="button" class="btn-preset" data-val="37" data-unit="celsius">Body Temp (37°C)</button>
+                <button type="button" class="btn-preset" data-val="100" data-unit="celsius">Boiling (100°C)</button>
+                <button type="button" class="btn-preset" data-val="0" data-unit="kelvin">Absolute Zero (0 K)</button>
+            </div>
+
+            <!-- 7. Footer -->
+            <footer class="converter-footer">
+                <p>&copy; 2026 Oasis Infobyte (OIBSIP) Task 3 · Built by <strong>Madhu S</strong></p>
+            </footer>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
