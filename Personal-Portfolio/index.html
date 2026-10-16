@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Portfolio of Madhu S - Electrical & Electronics Engineering Student, IoT Developer, and Aspiring Tech Professional.">
+    <title>Madhu S | Engineering Student & IoT Developer Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Background Ambient Glows -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+
+    <!-- Navigation Header -->
+    <header class="navbar-wrapper">
+        <nav class="navbar">
+            <a href="#hero" class="nav-brand">
+                <span class="brand-code">&lt;</span>
+                <span class="brand-name">Madhu.S</span>
+                <span class="brand-code">/&gt;</span>
+            </a>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#hero" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                <li><a href="#contact" class="nav-link nav-btn-cta">Contact</a></li>
+            </ul>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="status-badge">
+                        <span class="pulse-indicator"></span>
+                        Available for Internships & Full-time Roles
+                    </div>
+
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="gradient-text">Madhu S</span>
+                    </h1>
+                    <h2 class="hero-subtitle">
+                        Electrical &amp; Electronics Engineer <span class="text-separator">•</span> IoT &amp; Embedded Systems
+                    </h2>
+
+                    <p class="hero-bio">
+                        B.E. candidate at Sapthagiri College of Engineering, Bangalore. Driven by creating innovative hardware-software solutions—from intelligent solar energy controllers to automated robotics and modern web interfaces.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>Explore Projects</span>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <span>Get in Touch</span>
+                        </a>
+                    </div>
+
+                    <div class="hero-socials">
+                        <a href="https://github.com/madhushreeg67-cpu" target="_blank" rel="noopener noreferrer" class="social-icon" title="GitHub Profile">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                        </a>
+                        <a href="https://linkedin.com/in/madhu-shree-gowda-79a975302" target="_blank" rel="noopener noreferrer" class="social-icon" title="LinkedIn Profile">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                        <a href="mailto:madhushreeg67@gmail.com" class="social-icon" title="Email Madhu">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        </a>
+                        <a href="tel:+919880249316" class="social-icon" title="Phone Call">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        </a>
+                        <span class="location-badge">📍 Bangalore, India</span>
+                    </div>
+                </div>
+
+                <div class="hero-image-column">
+                    <div class="avatar-card">
+                        <div class="avatar-ring">
+                            <img src="images/avatar.jpg" alt="Madhu S - Electrical & Electronics Engineering Student" class="avatar-img">
+                        </div>
+                        <div class="avatar-floating-badge badge-top-right">
+                            <span class="badge-icon">⚡</span>
+                            <div>
+                                <strong>EEE Engineer</strong>
+                                <span>IoT &amp; Energy</span>
+                            </div>
+                        </div>
+                        <div class="avatar-floating-badge badge-bottom-left">
+                            <span class="badge-icon">🏆</span>
+                            <div>
+                                <strong>VTU Athlete</strong>
+                                <span>State Medalist</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section class="section about-section" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">GET TO KNOW ME</span>
+                    <h2 class="section-title">About Me</h2>
+                    <p class="section-subtitle">Dedicated to engineering practical systems that merge power electronics, embedded intelligence, and software.</p>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-card career-objective-card">
+                        <div class="about-icon">🎯</div>
+                        <h3>Career Objective</h3>
+                        <p>
+                            To obtain an impactful role in a progressive organization that fosters continuous technical learning, where I can apply my foundation in electrical engineering, IoT, and programming to solve real-world engineering challenges.
+                        </p>
+                        <div class="highlights-row">
+                            <div class="highlight-item">
+                                <span class="highlight-num">6.93</span>
+                                <span class="highlight-label">Engineering CGPA</span>
+                            </div>
+                            <div class="highlight-item">
+                                <span class="highlight-num">3+</span>
+                                <span class="highlight-label">Featured Projects</span>
+                            </div>
+                            <div class="highlight-item">
+                                <span class="highlight-num">4+</span>
+                                <span class="highlight-label">Athletic Medals</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-card education-card">
+                        <div class="about-icon">🎓</div>
+                        <h3>Education</h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-date">Present • Pursuing</span>
+                                    <h4>B.E. in Electrical &amp; Electronics Engineering</h4>
+                                    <p class="institution">Sapthagiri College of Engineering, Bangalore</p>
+                                    <span class="score-tag">CGPA: 6.93</span>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-date">2022 – 2023</span>
+                                    <h4>PUC (PCMB)</h4>
+                                    <p class="institution">Master Pre-University College</p>
+                                    <span class="score-tag">Grade: 69.33%</span>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-date">2020 – 2021</span>
+                                    <h4>Secondary School (SSLC)</h4>
+                                    <p class="institution">Sharada Vidyalaya</p>
+                                    <span class="score-tag">Grade: 72.00%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section class="section skills-section" id="skills">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">CAPABILITIES & TOOLS</span>
+                    <h2 class="section-title">Technical Skills</h2>
+                    <p class="section-subtitle">A balanced toolkit combining core electrical engineering with programming and embedded technologies.</p>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Category 1: Programming -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <div class="cat-icon-box">💻</div>
+                            <div>
+                                <h3>Programming Languages</h3>
+                                <p>Software fundamentals &amp; scripting</p>
+                            </div>
+                        </div>
+                        <div class="skill-tags">
+                            <div class="skill-tag">
+                                <span class="tag-bullet"></span> Python
+                            </div>
+                            <div class="skill-tag">
+                                <span class="tag-bullet"></span> C Programming
+                            </div>
+                            <div class="skill-tag">
+                                <span class="tag-bullet"></span> HTML5 &amp; CSS3
+                            </div>
+                            <div class="skill-tag">
+                                <span class="tag-bullet"></span> JavaScript Basics
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Category 2: Hardware & Embedded -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <div class="cat-icon-box">⚡</div>
+                            <div>
+                                <h3>Hardware &amp; Embedded Systems</h3>
+                                <p>Circuits, microcontrollers &amp; HDL</p>
+                            </div>
+                        </div>
+                        <div class="skill-tags">
+                            <div class="skill-tag">
+                                <span class="tag-bullet"></span> ESP32 IoT
+                            </div>
+                            <div class="skill-tag">
+                                <span class="tag-bullet"></span> MPPT Charge Controllers
+                            </div>
+                            <div class="skill-tag">
+                                <span class="tag-bullet"></span> VHDL (Hardware Description)
+                            </div>
+                            <div class="skill-tag">
+                                <span class="tag-bullet"></span> CAED (Computer-Aided Design)
+                            </div>
+                            <div class="skill-tag">
+                                <span class="tag-bullet"></span> Sensor Interfacing
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Category 3: Technologies & Tools -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <div class="cat-icon-box">🛠️</div>
+                            <div>
+                                <h3>Technologies &amp; Analytics</h3>
+                                <p>Digital tools &amp; productivity software</p>
+                            </div>
+                        </div>
+                        <div class="skill-tags">
+                            <div class="skill-tag">
+                                <span class="tag-bullet"></span> Digital Signal Processing (DSP)
+                            </div>
+                            <div class="skill-tag">
+                                <span class="tag-bullet"></span> MS Excel (Data Analytics)
+                            </div>
+                            <div class="skill-tag">
+                                <span class="tag-bullet"></span> MS Word
+                            </div>
+                            <div class="skill-tag">
+                                <span class="tag-bullet"></span> Git &amp; GitHub
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Category 4: Professional & Soft Skills -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <div class="cat-icon-box">🤝</div>
+                            <div>
+                                <h3>Professional Leadership</h3>
+                                <p>Collaboration &amp; work ethics</p>
+                            </div>
+                        </div>
+                        <div class="skill-tags">
+                            <div class="skill-tag">
+                                <span class="tag-bullet"></span> Teamwork &amp; Collaboration
+                            </div>
+                            <div class="skill-tag">
+                                <span class="tag-bullet"></span> Time Management
+                            </div>
+                            <div class="skill-tag">
+                                <span class="tag-bullet"></span> Team Leadership
+                            </div>
+                            <div class="skill-tag">
+                                <span class="tag-bullet"></span> Problem Solving
+                            </div>
+                            <div class="skill-tag">
+                                <span class="tag-bullet"></span> Athletic Discipline
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="section projects-section" id="projects">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">MY WORK</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                    <p class="section-subtitle">Real-world applications spanning renewable energy, agricultural automation, and responsive web platforms.</p>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1: Solar MPPT -->
+                    <article class="project-card">
+                        <div class="project-image-box">
+                            <img src="images/project-solar.jpg" alt="Intelligent Solar Charge Controller with MPPT and Cloud-Based Monitoring">
+                            <span class="project-badge">Hardware &amp; IoT</span>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span>ESP32</span>
+                                <span>MPPT</span>
+                                <span>Cloud Telemetry</span>
+                                <span>Solar PV</span>
+                            </div>
+                            <h3 class="project-title">Intelligent Solar Charge Controller with MPPT &amp; Cloud Monitoring</h3>
+                            <p class="project-desc">
+                                Developed an intelligent Maximum Power Point Tracking (MPPT) solar charge controller to optimize energy harvest from photovoltaic systems under changing solar irradiance.
+                            </p>
+                            <ul class="project-features">
+                                <li>Implemented an ESP32-based IoT communication unit logging real-time voltage, current, and wattage.</li>
+                                <li>Configured cloud telemetry dashboard for remote battery health monitoring and tracking.</li>
+                                <li>Achieved significant improvement in charging efficiency and battery life extension.</li>
+                            </ul>
+                            <div class="project-footer">
+                                <a href="https://github.com/madhushreeg67-cpu" target="_blank" rel="noopener noreferrer" class="btn-link">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                                    <span>View Source / Specs</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: Agri-Robot -->
+                    <article class="project-card">
+                        <div class="project-image-box">
+                            <img src="images/project-agri-robot.jpg" alt="Automated Pesticide Sprayer and Harvesting System">
+                            <span class="project-badge">Robotics &amp; Automation</span>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span>Automation</span>
+                                <span>Robotics</span>
+                                <span>Precision Agri</span>
+                                <span>Sensors</span>
+                            </div>
+                            <h3 class="project-title">Automated Pesticide Sprayer &amp; Harvesting System</h3>
+                            <p class="project-desc">
+                                Project work presented at Acharya Institute of Technology in the prestigious Srishti Innovation Exchange 2025.
+                            </p>
+                            <ul class="project-features">
+                                <li>Designed and fabricated an automated agricultural rover for controlled pesticide dispensing.</li>
+                                <li>Integrated robotic harvesting mechanism to assist farming labor and increase safety.</li>
+                                <li>Presented technical research paper and prototype demonstration at Srishti 2025.</li>
+                            </ul>
+                            <div class="project-footer">
+                                <a href="https://github.com/madhushreeg67-cpu" target="_blank" rel="noopener noreferrer" class="btn-link">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                                    <span>Conference Project</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3: FarmCare Web App -->
+                    <article class="project-card">
+                        <div class="project-image-box">
+                            <img src="images/project-farmcare.jpg" alt="FarmCare Landing Page Web Platform">
+                            <span class="project-badge">Web Development</span>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>Responsive</span>
+                                <span>UI/UX</span>
+                            </div>
+                            <h3 class="project-title">FarmCare — Dairy Herd Health &amp; Management Web Portal</h3>
+                            <p class="project-desc">
+                                Built as Task 1 for the Oasis Infobyte (OIBSIP) Web Development Internship, featuring responsive modern design and dairy welfare advisory.
+                            </p>
+                            <ul class="project-features">
+                                <li>Designed modern responsive layout with 6 comprehensive care modules and checklists.</li>
+                                <li>Implemented mobile-first navigation, accessible forms, and smooth micro-animations.</li>
+                                <li>Published on GitHub repository under Oasis Infobyte internship portfolio.</li>
+                            </ul>
+                            <div class="project-footer">
+                                <a href="https://github.com/madhushreeg67-cpu/OIBSIP" target="_blank" rel="noopener noreferrer" class="btn-link">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                                    <span>OIBSIP Repository</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements & Certifications Section -->
+        <section class="section achievements-section" id="achievements">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">CREDENTIALS & HONORS</span>
+                    <h2 class="section-title">Certifications &amp; Sports Achievements</h2>
+                    <p class="section-subtitle">Excellence in machine learning, engineering conferences, and university athletics.</p>
+                </div>
+
+                <div class="achievements-grid">
+                    <!-- Column 1: Certifications -->
+                    <div class="achievement-card">
+                        <div class="achievement-header">
+                            <span class="ach-icon">📜</span>
+                            <h3>Certifications &amp; Training</h3>
+                        </div>
+                        <ul class="achievement-list">
+                            <li>
+                                <div class="ach-bullet"></div>
+                                <div>
+                                    <strong>Machine Learning With Python</strong>
+                                    <span>Varcons Technologies Pvt. Ltd.</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="ach-bullet"></div>
+                                <div>
+                                    <strong>Machine Learning With Linear Regression</strong>
+                                    <span>Analyttica Datalab Pvt. Ltd.</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="ach-bullet"></div>
+                                <div>
+                                    <strong>Web Development &amp; Designing Intern</strong>
+                                    <span>Oasis Infobyte (OIBSIP)</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 2: Sports & Athletic Honors -->
+                    <div class="achievement-card">
+                        <div class="achievement-header">
+                            <span class="ach-icon">🏅</span>
+                            <h3>Sports &amp; Athletics Honors</h3>
+                        </div>
+                        <ul class="achievement-list">
+                            <li>
+                                <div class="ach-bullet gold"></div>
+                                <div>
+                                    <strong>Yuva Dasara Athletic Meet (2025)</strong>
+                                    <span>🥇 1st Place — 100m, 200m &amp; Long Jump</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="ach-bullet silver"></div>
+                                <div>
+                                    <strong>VTU Intercollegiate Kabaddi (2024)</strong>
+                                    <span>🥈 2nd Place — Visvesvaraya Technological University</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="ach-bullet bronze"></div>
+                                <div>
+                                    <strong>Yuva Dasara Athletic Meet (2024)</strong>
+                                    <span>🥉 3rd Place — Long Jump</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="ach-bullet blue"></div>
+                                <div>
+                                    <strong>VTU 26th State Level Athletic Meet (2025)</strong>
+                                    <span>🏃 Competitor &amp; State Level Finalist</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section contact-section" id="contact">
+            <div class="container">
+                <div class="contact-box">
+                    <div class="contact-details">
+                        <span class="section-tag tag-glow">LET'S CONNECT</span>
+                        <h2>Get in Touch</h2>
+                        <p>
+                            Interested in collaborating on IoT hardware, software, or discussing internship and career opportunities? I'd love to connect with you!
+                        </p>
+
+                        <div class="contact-info-list">
+                            <a href="mailto:madhushreeg67@gmail.com" class="info-row">
+                                <div class="info-icon">📧</div>
+                                <div>
+                                    <span>Email</span>
+                                    <strong>madhushreeg67@gmail.com</strong>
+                                </div>
+                            </a>
+
+                            <a href="tel:+919880249316" class="info-row">
+                                <div class="info-icon">📞</div>
+                                <div>
+                                    <span>Phone</span>
+                                    <strong>+91 9880249316</strong>
+                                </div>
+                            </a>
+
+                            <div class="info-row">
+                                <div class="info-icon">📍</div>
+                                <div>
+                                    <span>Location</span>
+                                    <strong>Bangalore, Karnataka, India</strong>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-links-footer">
+                            <a href="https://linkedin.com/in/madhu-shree-gowda-79a975302" target="_blank" rel="noopener noreferrer" class="social-pill">
+                                <span>LinkedIn Profile</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                            </a>
+                            <a href="https://github.com/madhushreeg67-cpu" target="_blank" rel="noopener noreferrer" class="social-pill">
+                                <span>GitHub Repositories</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-wrap">
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" placeholder="John Doe" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" placeholder="Project collaboration / Internship inquiry" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="4" placeholder="Write your message here..." required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block" id="submitBtn">
+                                <span>Send Message</span>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                            </button>
+                            <p class="form-feedback" id="formFeedback"></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p>&copy; 2026 Madhu S. All rights reserved. Designed for Oasis Infobyte (OIBSIP) Task 2.</p>
+            <div class="footer-links">
+                <a href="#hero">Back to Top ↑</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for smooth interactions -->
+    <script src="script.js"></script>
+</body>
+</html>
