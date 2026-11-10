@@ -1,11 +1,13 @@
 
-name: Deploy FarmCare to GitHub Pages
+name: Deploy All OIBSIP Projects to GitHub Pages
 
 on:
   push:
     branches: ["main"]
     paths:
       - "FarmCare-LandingPage/**"
+      - "Personal-Portfolio/**"
+      - "WebDev-L1-TemperatureConverter/**"
       - ".github/workflows/static.yml"
   workflow_dispatch:
 
@@ -15,7 +17,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: "pages"
+  group: pages
   cancel-in-progress: true
 
 jobs:
@@ -29,12 +31,20 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Upload FarmCare files
+      - name: Prepare all projects
+        run: |
+          mkdir -p _site/Personal-Portfolio
+          mkdir -p _site/WebDev-L1-TemperatureConverter
+
+          cp -R FarmCare-LandingPage/. _site/
+          cp -R Personal-Portfolio/. _site/Personal-Portfolio/
+          cp -R WebDev-L1-TemperatureConverter/. _site/WebDev-L1-TemperatureConverter/
+
+      - name: Upload website files
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./FarmCare-LandingPage
+          path: ./_site
 
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
